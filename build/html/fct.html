@@ -1,0 +1,214 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>fct module &#8212; Documentation Conversions_A_Tout_Va 0</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="docs" href="modules.html" />
+    <link rel="prev" title="Intro !" href="intro.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Index général"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Index des modules Python"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="docs"
+             accesskey="N">suivant</a> |</li>
+        <li class="right" >
+          <a href="intro.html" title="Intro !"
+             accesskey="P">précédent</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Documentation Conversions_A_Tout_Va 0</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Sujet précédent</h4>
+  <p class="topless"><a href="intro.html"
+                        title="Chapitre précédent">Intro !</a></p>
+  <h4>Sujet suivant</h4>
+  <p class="topless"><a href="modules.html"
+                        title="Chapitre suivant">docs</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Cette page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/fct.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-fct">
+<span id="fct-module"></span><h1>fct module<a class="headerlink" href="#module-fct" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Module qui permet d'effectuer des conversions
+- de temps / durée
+- de temperature</p>
+<p>$ python fct.py</p>
+<dl class="function">
+<dt id="fct.calculerTempsEcoule">
+<code class="descclassname">fct.</code><code class="descname">calculerTempsEcoule</code><span class="sig-paren">(</span><em>h1</em>, <em>m1</em>, <em>s1</em>, <em>h2</em>, <em>m2</em>, <em>s2</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/fct.html#calculerTempsEcoule"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#fct.calculerTempsEcoule" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Fonction qui calcule le temps écoulé entre deux horaires</p>
+<dl class="docutils">
+<dt>Args :</dt>
+<dd>h1 (int) : heures horaire 1
+m1 (int) : minutes horaire 1
+s1 (int) : secondes horaire 1
+h2 (int) : heures horaire 2
+m2 (int) : minutes horaire 2
+s2 (int) : secondes horaire 2</dd>
+<dt>Returns :</dt>
+<dd>diff (int) : difference en secondes entre les 2 horaires</dd>
+<dt>Examples :</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">calculerTempsEcoule</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">36</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="go">15900</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="fct.celsiusToFahrenheit">
+<code class="descclassname">fct.</code><code class="descname">celsiusToFahrenheit</code><span class="sig-paren">(</span><em>tC</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/fct.html#celsiusToFahrenheit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#fct.celsiusToFahrenheit" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Fonction qui permet de convertir une température en degré celsius en une
+temperature en degre Farhenheit</p>
+<dl class="docutils">
+<dt>Args :</dt>
+<dd>tC (float) : Temprature en degres Celsius</dd>
+<dt>Returns :</dt>
+<dd>tF (float) : Temperature en degres Farenheit</dd>
+<dt>Examples :</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">celsiusToFahrenheit</span><span class="p">(</span><span class="mi">37</span><span class="p">)</span>
+<span class="go">98.60</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="fct.convertirEnHMS">
+<code class="descclassname">fct.</code><code class="descname">convertirEnHMS</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/fct.html#convertirEnHMS"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#fct.convertirEnHMS" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Fonction qui permet de convertir une durée en secondes en heures/minutes/secondes</p>
+<dl class="docutils">
+<dt>Args :</dt>
+<dd>s (int) : Duree en secondes</dd>
+<dt>Returns :</dt>
+<dd>triplet (tuple) : Temps en (heures,minutes,secondes)</dd>
+<dt>Examples :</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">convertirEnHMS</span><span class="p">(</span><span class="mi">12345</span><span class="p">)</span>
+<span class="go">(3, 25, 45)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="fct.convertirEnSecondes">
+<code class="descclassname">fct.</code><code class="descname">convertirEnSecondes</code><span class="sig-paren">(</span><em>h</em>, <em>m</em>, <em>s</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/fct.html#convertirEnSecondes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#fct.convertirEnSecondes" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Fonction qui permet de convertir une température en degré Farhenheit en une
+temperature en degre Celsius</p>
+<dl class="docutils">
+<dt>Args :</dt>
+<dd>tF (float) : Temperature en degre Farenheit</dd>
+<dt>Returns :</dt>
+<dd>tC (float) : Temperature en degre Celsius</dd>
+</dl>
+<p>Examples :
+&gt;&gt;&gt; convertirEnSecondes(2,30,12)
+9012</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="fct.fahrenheitToCelsius">
+<code class="descclassname">fct.</code><code class="descname">fahrenheitToCelsius</code><span class="sig-paren">(</span><em>tF</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/fct.html#fahrenheitToCelsius"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#fct.fahrenheitToCelsius" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Fonction qui permet de convertir une température en degré Farhenheit en une
+temperature en degre Celsius</p>
+<dl class="docutils">
+<dt>Args :</dt>
+<dd>tF (float) : Temperature en degres Farenheit</dd>
+<dt>Returns :</dt>
+<dd>tC (float) : Temprature en degres Celsius</dd>
+<dt>Examples :</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fahrenheitToCelsius</span><span class="p">(</span><span class="mi">72</span><span class="p">)</span>
+<span class="go">22.222222</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Index général"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Index des modules Python"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="docs"
+             >suivant</a> |</li>
+        <li class="right" >
+          <a href="intro.html" title="Intro !"
+             >précédent</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Documentation Conversions_A_Tout_Va 0</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Noemie BLAHIC, Melanie GROSSO.
+      Créé avec <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>
