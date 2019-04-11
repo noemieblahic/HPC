@@ -1,68 +1,41 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Consolas;
-}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red74\green70\blue67;
-\red255\green255\blue255;}
-{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c36078\c34510\c33333;
-\cssrgb\c100000\c100000\c100000;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+# Fct Conversions
 
-\f0\fs24 \cf0 # Fct Conversions\
-\
-Ce module contient un ensemble de fonctions permettant d'effectuer diverses conversions.\
-Vous pouvez convertir des temps, calculer la dur\'e9e entre deux horaires ou bien convertir\
-des temperature entre degres Celsius et degres Farenheit.\
-\
-\
-## Usage\
-\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 ```python \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 import fct\
-\
-fct.celsiusToFahrenheit(100) 	# 
-\f1\fs22 \cf2 \cb3 \CocoaLigature0 212.0
-\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 fct.fahrenheitToCelsius(100)	# 
-\f1\fs22 \cf2 \cb3 \CocoaLigature0 37.77777777777778
-\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 fct.convertirEnSecondes(1,20,30)	# 
-\f1\fs22 \cf2 \cb3 \CocoaLigature0 4830
-\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
-fct.convertirEnHMS(12345)		# 
-\f1\fs22 \cf2 \cb3 \CocoaLigature0 (3, 25, 45)
-\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
-fct.calculerTempsEcoule(1,20,40,3,20,50)	# 
-\f1\fs22 \cf2 \cb3 \CocoaLigature0 7200\
+Ce module contient un ensemble de fonctions permettant d'effectuer diverses conversions.
+Vous pouvez convertir des temps, calculer la durée entre deux horaires ou bien convertir
+des temperature entre degres Celsius et degres Farenheit.
 
-\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
-```\
-## License\
-\pard\pardeftab720\partightenfactor0
 
-\f2\fs28 \cf4 \cb5 \expnd0\expndtw0\kerning0
-MIT License\
-\
-Copyright (c) [year] [fullname]\
-\
-Permission is hereby granted, free of charge, to any person obtaining a copy\
-of this software and associated documentation files (the "Software"), to deal\
-in the Software without restriction, including without limitation the rights\
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\
-copies of the Software, and to permit persons to whom the Software is\
-furnished to do so, subject to the following conditions:\
-\
-The above copyright notice and this permission notice shall be included in all\
-copies or substantial portions of the Software.\
-\
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\
-SOFTWARE.}
+## Usage
+
+```python
+import fct
+
+fct.celsiusToFahrenheit(100) 	# 212.0
+fct.fahrenheitToCelsius(100)	# 37.77777777777778
+fct.convertirEnSecondes(1,20,30)	# 4830
+fct.convertirEnHMS(12345)		# (3, 25, 45)
+fct.calculerTempsEcoule(1,20,40,3,20,50)	# 7200
+
+```
+## License
+MIT License
+
+Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
